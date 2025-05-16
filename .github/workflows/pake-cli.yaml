@@ -88,7 +88,8 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: stable
-          target: x86_64-apple-darwin
+          # target: x86_64-apple-darwin
+          target: aarch64-apple-darwin
 
       - name: Install dependencies (ubuntu only)
         if: inputs.platform == 'ubuntu-24.04'
